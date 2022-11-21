@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn" id="open-reg-form">New User</button>
+		<section>
+			<div class="modal" id="reg-modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3></h3>
+						<button class="btn delete modal-close">X</button>
+					</div>
+					<div class="modal-body">
+						<form class="form" id="reg" action="#" method="#">
+							<input id="user_id" type="hidden" placeholder="" value="" />
+							<div class="input-field">
+								<label for="user_name">Enter User Name</label>
+								<input
+									type="text"
+									id="user_name"
+									placeholder="user name"
+									required
+								/>
+							</div>
+							<div class="input-field">
+								<label for="user_surname">Enter User Surname</label>
+								<input
+									type="text"
+									id="user_surname"
+									placeholder="user surname"
+									required
+								/>
+							</div>
+
+							<div class="input-field">
+								<label for="user_phone">Enter phone number</label>
+								<input
+									type="number"
+									id="user_phone"
+									placeholder="phone number"
+									required
+								/>
+							</div>
+
+							<div class="input-field">
+								<label for="user_personal-id">Enter personal id</label>
+								<input
+									type="number"
+									id="user_personal-id"
+									placeholder="personal id"
+									required
+								/>
+							</div>
+
+							<div class="input-field">
+								<label for="user_email">Enter Email</label>
+								<input
+									type="email"
+									id="user_email"
+									placeholder="email"
+									required
+								/>
+							</div>
+
+							<div class="input-field">
+								<label for="user_zip-code">Enter zip code</label>
+								<input
+									type="text"
+									id="user_zip-code"
+									placeholder="zip code"
+									required
+								/>
+							</div>
+
+							<div class="input-field">
+								<label for="user_gender">Enter gender</label>
+								<input
+									type="text"
+									id="user_gender"
+									placeholder="gender"
+									required
+								/>
+							</div>
+
+							<div class="input-field">
+								<button class="btn" type="submit">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="firstSec" id="firstSec">
+			<div>
+				<div class = "divclass">
+					<div class = "divclass1 divclass11">
+						<div class = "span2">
+							<span class = "span1 span11">id</span>
+						</div>
+					
+						<span class = "span1">${user.id}</span>
+					</div>
+	
+	
+	
+					<div class = "divclass1 divclass2">
+						<div class = "span3">
+							<span class = "span1 span11">Name</span>
+						</div>
+	
+	
+						<span class = "span1">${user.first_name}</span>
+					</div>
+					
+					<div class = "divclass1 divclass2">
+						<div class = "span3">
+							<span class = "span1 span11">Surname</span>
+						</div>
+	
+	
+					
+						<span class = "span1">${user.last_name}</span>
+					</div>
+					
+	
+					
+					<div class = "divclass1 divclass4">
+						<div class = "span4">
+							<span class = "span1 span11">email</span>
+						</div>
+						<span class = "span1">${user.email}</span>
+					</div>
+					
+					<div class = "divclass1 divclass2">
+						<div class = "span3">
+							<span class = "span1 span11">Personal ID</span>
+						</div>
+						<span class = "span1">${user.id_number}</span>
+					</div>
+					<div class = "divclass1 divclass2">
+						<div class = "span3">
+							<span class = "span1 span11">Mobile Number</span>
+						</div>
+						<span class = "span1">${user.phone}</span>
+					</div>
+					<div class = "divclass1 divclass2">
+						<div class = "span3">
+							<span class = "span1 span11">zip</span>
+						</div>
+						<span class = "span1">${user.zip_code}</span>
+					</div>
+					<div class = "divclass1 divclass2">
+						<div class = "span3">
+							<span class = "span1 span11">Gender</span>
+						</div>
+						<span class = "span1">${user.gender}</span>
+					</div>
+					<div class = "divclass1 divclass4">
+						<div class = "span3">
+							<span class = "span1 span11">Actions</span>
+						</div>
+						<div>
+							<button class = "btn1" id="editBtn">Edit</button>
+							<button class = "btn2" id="dltBtn">Delete</button>
+						</div>
+						
+					</div>
+	
+					
+				</div>
+
+			</div>
+
+		</section>
+		
+
+
+    <script src="main.js"></script>
+</body>
+</html>
